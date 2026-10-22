@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustentabilidade | Lavanderia Laviky</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" th:href="@{/css/main.css}">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="/">
+                <img src="/images/logo.png" alt="Lavanderia Laviky" height="50" class="me-2">
+                <span class="fw-bold text-primary">LAVIKY</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="/">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contato">Atendimento Empresarial</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/sustentabilidade">Sustentabilidade</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contato">Contato</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-primary rounded-pill px-4" href="/contato">Solicitar Atendimento</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="py-5 text-center bg-light">
+        <div class="container py-5">
+            <h1 class="display-4 fw-bold mb-3">Sustentabilidade</h1>
+            <div class="divider mx-auto mb-4"></div>
+            <p class="lead text-muted mx-auto" style="max-width: 800px;">
+                Na Lavanderia Laviky, acreditamos que a limpeza de nossas roupas não deve custar a limpeza do nosso planeta.
+                Implementamos tecnologias avançadas para minimizar nosso impacto ambiental.
+            </p>
+        </div>
+    </section>
+
+    <!-- Sustainability Content -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center mb-5">
+                <div class="col-lg-6">
+                    <img src="/images/solar-energy.jpg" alt="Energia Solar" class="img-fluid rounded-4 shadow">
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="fas fa-sun fs-2 text-warning me-3"></i>
+                        <h2 class="fw-bold mb-0">Energia Solar</h2>
+                    </div>
+                    <p class="text-muted">
+                        Investimos em energia limpa através da instalação de painéis fotovoltaicos em nossa unidade.
+                        Ao gerar nossa própria energia a partir do sol, reduzimos drasticamente a dependência de fontes não renováveis
+                        e diminuímos a emissão de gases de efeito estufa.
+                    </p>
+                    <p class="text-muted">
+                        Essa escolha reflete nosso compromisso com a eficiência energética e com a construção de um futuro
+                        mais verde para as próximas gerações.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row g-5 align-items-center mb-5 flex-lg-row-reverse">
+                <div class="col-lg-6">
+                    <img src="/images/water-treatment.jpg" alt="Tratamento de Água" class="img-fluid rounded-4 shadow">
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="fas fa-droplet fs-2 text-primary me-3"></i>
+                        <h2 class="fw-bold mb-0">Tratamento e Reuso de Água</h2>
+                    </div>
+                    <p class="text-muted">
+                        A água é o nosso recurso mais precioso. Por isso, implementamos sistemas modernos de filtragem e
+                        estações de tratamento de efluentes que permitem a reutilização da água em diversas etapas do processo.
+                    </p>
+                    <p class="text-muted">
+                        Com a redução do consumo de água potável, otimizamos nossa operação e garantimos que a água
+                        devolvida ao meio ambiente esteja dentro dos mais rigorosos padrões de qualidade.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row g-5 justify-content-center text-center">
+                <div class="col-lg-8">
+                    <div class="p-5 bg-light rounded-4 border">
+                        <i class="fas fa-earth-americas fs-1 text-success mb-3"></i>
+                        <h2 class="fw-bold mb-3">Consciência Ambiental</h2>
+                        <p class="text-muted lead">
+                            Além da energia e da água, priorizamos a utilização de produtos biodegradáveis e a redução de plásticos
+                            descartáveis em nossa logística. Treinamos nossa equipe continuamente para a gestão correta de resíduos
+                            e para a busca constante de processos mais eficientes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-5 bg-primary text-white text-center">
+        <div class="container">
+            <h2 class="fw-bold mb-4">Quer saber mais sobre como trabalhamos?</h2>
+            <a href="/contato" class="btn btn-light btn-lg rounded-pill px-4">Entre em Contato</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h4 class="fw-bold mb-4">LAVIKY</h4>
+                    <p class="text-secondary">Excelência em lavanderia profissional, unindo tecnologia, higiene e sustentabilidade para você e sua empresa.</p>
+                    <div class="social-links d-flex gap-3">
+                        <a href="#" class="text-white fs-5"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white fs-5"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-white fs-5"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="fw-bold mb-4">Institucional</h5>
+                    <ul class="list-unstyled text-secondary">
+                        <li class="mb-2"><a href="/" class="text-decoration-none text-secondary">Início</a></li>
+                        <li class="mb-2"><a href="/sustentabilidade" class="text-decoration-none text-secondary">Sustentabilidade</a></li>
+                        <li class="mb-2"><a href="/contato" class="text-decoration-none text-secondary">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="fw-bold mb-4">Links Rápidos</h5>
+                    <ul class="list-unstyled text-secondary">
+                        <li class="mb-2"><a href="/contato" class="text-decoration-none text-secondary">Atendimento Empresarial</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">Política de Privacidade</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">Termos de Uso</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="fw-bold mb-4">Contato</h5>
+                    <ul class="list-unstyled text-secondary">
+                        <li class="mb-2"><i class="fas fa-phone me-2"></i> (XX) XXXX-XXXX</li>
+                        <li class="mb-2"><i class="fas fa-envelope me-2"></i> contato@laviky.com.br</li>
+                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> Sua Cidade, Estado</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 border-secondary">
+            <div class="text-center text-secondary small">
+                &copy; 2026 Lavanderia Laviky. Todos os direitos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script th:src="@{/js/main.js}"></script>
+</body>
+</html>

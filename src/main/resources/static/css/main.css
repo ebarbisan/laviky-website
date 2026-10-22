@@ -1,0 +1,120 @@
+:root {
+    --primary-color: #0056b3;
+    --primary-hover: #004494;
+    --secondary-color: #6c757d;
+    --accent-color: #28a745;
+    --light-bg: #f8f9fa;
+    --dark-text: #212529;
+    --muted-text: #6c757d;
+    --white: #ffffff;
+    --shadow-sm: 0 2px 4px rgba(0,0,0,0.05);
+    --shadow-lg: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark-text);
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, .fw-bold {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.text-primary { color: var(--primary-color) !important; }
+.bg-primary { background-color: var(--primary-color) !important; }
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+.btn-primary:hover {
+    background-color: var(--primary-hover);
+    border-color: var(--primary-hover);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
+}
+
+/* Hero Section */
+.hero-section {
+    min-height: 80vh;
+    padding: 80px 0;
+    background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+/* Dividers */
+.divider {
+    width: 60px;
+    height: 4px;
+    background-color: var(--primary-color);
+    margin-top: 15px;
+    border-radius: 2px;
+}
+
+/* Cards & Effects */
+.hover-up {
+    transition: all 0.3s ease;
+}
+.hover-up:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-lg) !important;
+}
+
+.icon-box {
+    width: 80px;
+    height: 80px;
+    background-color: rgba(0, 86, 179, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+.hover-up:hover .icon-box {
+    background-color: rgba(0, 86, 179, 0.2);
+}
+
+.service-card {
+    transition: all 0.3s ease;
+    cursor: default;
+}
+.service-card:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border-color: var(--primary-color);
+}
+.service-card:hover .text-primary,
+.service-card:hover .text-muted {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+.service-card:hover i {
+    color: var(--white) !important;
+}
+
+/* Google Reviews Carousel */
+#reviews-carousel .carousel-item {
+    padding: 40px 0;
+}
+.review-card {
+    max-width: 600px;
+    margin: 0 auto;
+    background: var(--white);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: var(--shadow-lg);
+}
+.star-rating {
+    color: #ffc107;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+    border-top: 5px solid var(--primary-color);
+}
+.social-links a {
+    transition: color 0.3s ease;
+}
+.social-links a:hover {
+    color: var(--primary-color) !important;
+}

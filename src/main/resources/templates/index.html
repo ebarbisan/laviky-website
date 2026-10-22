@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lavanderia Laviky | Profissionalismo e Qualidade</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" th:href="@{/css/main.css}">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="/">
+                <img src="/images/logo.png" alt="Lavanderia Laviky" height="50" class="me-2">
+                <span class="fw-bold text-primary">LAVIKY</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link active" href="/">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contato">Atendimento Empresarial</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/sustentabilidade">Sustentabilidade</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contato">Contato</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-primary rounded-pill px-4" href="/contato">Solicitar Atendimento</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold text-dark mb-4">Cuidado Profissional para suas Roupas e Negócios</h1>
+                    <p class="lead mb-5 text-muted">Aliamos tecnologia de ponta e sustentabilidade para entregar a máxima higiene e conservação. Atendemos clientes residenciais e corporativos com excelência.</p>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <a href="/contato" class="btn btn-primary btn-lg rounded-pill px-4 py-3">Entrar em Contato</a>
+                        <a href="/contato" class="btn btn-outline-primary btn-lg rounded-pill px-4 py-3">Atendimento Empresarial</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                    <img src="/images/hero-laundry.jpg" alt="Lavanderia Profissional" class="img-fluid rounded-4 shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Diferenciais Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Por que escolher a Laviky?</h2>
+                <div class="divider mx-auto"></div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm p-4 text-center hover-up">
+                        <div class="icon-box mb-3 mx-auto">
+                            <i class="fas fa-leaf text-success fs-2"></i>
+                        </div>
+                        <h4 class="fw-bold">Sustentável</h4>
+                        <p class="text-muted">Processos eco-friendly que reduzem o impacto ambiental e preservam a natureza.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm p-4 text-center hover-up">
+                        <div class="icon-box mb-3 mx-auto">
+                            <i class="fas fa-award text-primary fs-2"></i>
+                        </div>
+                        <h4 class="fw-bold">Qualidade Premium</h4>
+                        <p class="text-muted">Utilizamos os melhores insumos e tecnologia para garantir a durabilidade das peças.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm p-4 text-center hover-up">
+                        <div class="icon-box mb-3 mx-auto">
+                            <i class="fas fa-building text-primary fs-2"></i>
+                        </div>
+                        <h4 class="fw-bold">Foco Corporativo</h4>
+                        <p class="text-muted">Soluções sob medida para hotéis, hospitais e empresas com alta demanda.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Nossos Serviços</h2>
+                <div class="divider mx-auto"></div>
+            </div>
+            <div class="row g-4">
+                <!-- Serviço 1 -->
+                <div class="col-md-4">
+                    <div class="service-card p-4 border rounded-4 text-center h-100">
+                        <i class="fas fa-tshirt fs-1 text-primary mb-3"></i>
+                        <h5 class="fw-bold">Lavagem de Roupas</h5>
+                        <p class="text-muted">Cuidado especializado para cada tipo de tecido, garantindo limpeza profunda.</p>
+                    </div>
+                </div>
+                <!-- Serviço 2 -->
+                <div class="col-md-4">
+                    <div class="service-card p-4 border rounded-4 text-center h-100">
+                        <i class="fas fa-bed fs-1 text-primary mb-3"></i>
+                        <h5 class="fw-bold">Enxovais e Hotelaria</h5>
+                        <p class="text-muted">Soluções eficientes para lençóis, toalhas e roupas de cama com padrão hoteleiro.</p>
+                    </div>
+                </div>
+                <!-- Serviço 3 -->
+                <div class="col-md-4">
+                    <div class="service-card p-4 border rounded-4 text-center h-100">
+                        <i class="fas fa-wind fs-1 text-primary mb-3"></i>
+                        <h5 class="fw-bold">Passadoria Profissional</h5>
+                        <p class="text-muted">Acabamento impecável para que suas roupas estejam sempre prontas para o uso.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Reviews Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">O que dizem nossos clientes</h2>
+                <div class="divider mx-auto"></div>
+            </div>
+
+            <div id="reviews-carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner" id="google-reviews-container">
+                    <!-- Reviews loaded via JS from Google API -->
+                    <div class="carousel-item active text-center">
+                        <div class="p-5">
+                            <div class="spinner-border text-primary" role="status">
+                                <span class="visually-hidden">Carregando avaliações...</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#reviews-carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-dark rounded-circle"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#reviews-carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon bg-dark rounded-circle"></span>
+                </button>
+            </div>
+
+            <div class="text-center mt-4">
+                <button class="btn btn-outline-primary rounded-pill" data-bs-toggle="modal" data-bs-target="#reviewsModal">
+                    Ver todas as avaliações
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sustainability Teaser -->
+    <section class="py-5 bg-primary text-white text-center">
+        <div class="container">
+            <h2 class="fw-bold mb-3">Comprometidos com o Planeta</h2>
+            <p class="lead mb-4">Utilizamos energia solar e sistemas de reuso de água para garantir um futuro mais limpo.</p>
+            <a href="/sustentabilidade" class="btn btn-light btn-lg rounded-pill px-4">Saiba Mais</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h4 class="fw-bold mb-4">LAVIKY</h4>
+                    <p class="text-secondary">Excelência em lavanderia profissional, unindo tecnologia, higiene e sustentabilidade para você e sua empresa.</p>
+                    <div class="social-links d-flex gap-3">
+                        <a href="#" class="text-white fs-5"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white fs-5"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-white fs-5"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="fw-bold mb-4">Institucional</h5>
+                    <ul class="list-unstyled text-secondary">
+                        <li class="mb-2"><a href="/" class="text-decoration-none text-secondary">Início</a></li>
+                        <li class="mb-2"><a href="/sustentabilidade" class="text-decoration-none text-secondary">Sustentabilidade</a></li>
+                        <li class="mb-2"><a href="/contato" class="text-decoration-none text-secondary">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="fw-bold mb-4">Links Rápidos</h5>
+                    <ul class="list-unstyled text-secondary">
+                        <li class="mb-2"><a href="/contato" class="text-decoration-none text-secondary">Atendimento Empresarial</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">Política de Privacidade</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">Termos de Uso</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="fw-bold mb-4">Contato</h5>
+                    <ul class="list-unstyled text-secondary">
+                        <li class="mb-2"><i class="fas fa-phone me-2"></i> (XX) XXXX-XXXX</li>
+                        <li class="mb-2"><i class="fas fa-envelope me-2"></i> contato@laviky.com.br</li>
+                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> Sua Cidade, Estado</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 border-secondary">
+            <div class="text-center text-secondary small">
+                &copy; 2026 Lavanderia Laviky. Todos os direitos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Reviews Modal -->
+    <div class="modal fade" id="reviewsModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold">Avaliações dos Clientes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="modal-reviews-list" class="list-group list-group-flush">
+                        <!-- Reviews loaded via JS -->
+                        <div class="text-center p-5">
+                            <div class="spinner-border text-primary" role="status">
+                                <span class="visually-hidden">Carregando...</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script th:src="@{/js/main.js}"></script>
+</body>
+</html>

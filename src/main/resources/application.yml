@@ -1,0 +1,45 @@
+spring:
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:mysql://localhost:3306/laviky_db?createDatabaseIfNotExist=true&serverTimezone=UTC}
+    username: ${SPRING_DATASOURCE_USERNAME:root}
+    password: ${SPRING_DATASOURCE_PASSWORD:root}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+
+  mail:
+    host: ${SPRING_MAIL_HOST:smtp.gmail.com}
+    port: ${SPRING_MAIL_PORT:587}
+    username: ${SPRING_MAIL_USERNAME:}
+    password: ${SPRING_MAIL_PASSWORD:}
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 5MB
+
+# Application Properties
+laviky:
+  mail:
+    from: ${LAVIKY_MAIL_FROM:noreply@laviky.com.br}
+    contact-email: ${LAVIKY_CONTACT_EMAIL:contato@laviky.com.br}
+  upload:
+    dir: ${LAVIKY_UPLOAD_DIR:uploads/}
+  google:
+    api-key: ${GOOGLE_PLACES_API_KEY:}
+    place-id: ${GOOGLE_PLACE_ID:}
+
+server:
+  port: 8080
